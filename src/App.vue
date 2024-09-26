@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <grid-css msg="Welcome to Your Vue.js App" />
+    <!-- <sample-page></sample-page> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import FormHandling from "./components/FormHandling.vue";
+import GridCss from './components/GridCss.vue';
+// import SamplePage from './components/SamplePage.vue';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // FormHandling,
+    GridCss,
+    // SamplePage,
+  },
+};
 </script>
 
 <style>
@@ -21,7 +25,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
